@@ -1,0 +1,1 @@
+AtCoder用に作ったRubyの実行環境
