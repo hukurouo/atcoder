@@ -23,3 +23,4 @@ a.shift(n) : n個だけ取り除き、それを配列で返す
 .floor 切り捨て
 .ceil  切り上げ
 .round 四捨五入
+Float::INFINITY 無限
