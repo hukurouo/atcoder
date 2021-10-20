@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc139/tasks/abc139_b
+
 # 入力
 a,b=gets.chomp.split(" ").map(&:to_f);
 

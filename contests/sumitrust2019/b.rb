@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_b
+
 # 入力
 n = gets.to_i
 

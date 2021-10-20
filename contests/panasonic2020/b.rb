@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_b
+
 # 入力
 h,w = gets.chomp.split(" ").map(&:to_i);
 

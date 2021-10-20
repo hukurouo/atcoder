@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/abc156/tasks/abc156_c
+
 # 入力
 n = gets.to_i
 arr = gets.chomp.split(" ").map(&:to_i);

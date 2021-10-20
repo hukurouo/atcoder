@@ -1,3 +1,5 @@
+# https://atcoder.jp/contests/code-festival-2016-qualb/tasks/codefestival_2016_qualB_b
+
 # 入力
 n,a,b = gets.chomp.split(" ").map(&:to_i);
 s = gets.chomp
