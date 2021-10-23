@@ -3,6 +3,7 @@ n = gets.to_i
 # スペース区切りの整数の入力
 b,c = gets.chomp.split(" ").map(&:to_i);
 arr = gets.chomp.split(" ").map(&:to_i);
+xy = Array.new(n) { gets.split(" ").map(&:to_i) }
 # 文字列の入力
 s = gets.chomp
 # 出力
@@ -14,9 +15,11 @@ while 条件式 do
 end
 # 各桁の和
 num.to_s.split(//).map(&:to_i).sum
-# 文字列の削除
+# 文字列
 s.slice!(i,n) : i番目からn文字削除
+s[len-n,len] : 文字列の末尾n文字
 # 配列操作
+Array.new(N) { Array.new(M,0) }
 a.shift : 配列の先頭の要素を取り除いてそれを返す
 a.shift(n) : n個だけ取り除き、それを配列で返す
 a.pop   : 配列の末尾から要素を取り除いてそれを返す
