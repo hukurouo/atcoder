@@ -23,3 +23,5 @@ end
 # 出力
 print("#{res}\n")
 
+# bit全探索
+
