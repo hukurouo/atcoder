@@ -1,9 +1,9 @@
 # 整数の入力
-n = gets.to_i
+N = gets.to_i
 # スペース区切りの整数の入力
-b,c = gets.chomp.split(" ").map(&:to_i);
-arr = gets.chomp.split(" ").map(&:to_i);
-xy = Array.new(n) { gets.split(" ").map(&:to_i) }
+b,c = gets.chomp.split.map(&:to_i);
+arr = gets.chomp.split.map(&:to_i);
+xy = Array.new(n) { gets.split.map(&:to_i) }
 # 文字列の入力
 s = gets.chomp
 # 出力
