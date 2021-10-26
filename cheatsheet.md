@@ -3,7 +3,8 @@ N = gets.to_i
 # スペース区切りの整数の入力
 b,c = gets.chomp.split.map(&:to_i);
 arr = gets.chomp.split.map(&:to_i);
-xy = Array.new(n) { gets.split.map(&:to_i) }
+xy = Array.new(N) { gets.split.map(&:to_i) }
+arr = Array.new(N) { gets.to_i }
 # 文字列の入力
 s = gets.chomp
 # 出力
@@ -30,3 +31,5 @@ a.pop   : 配列の末尾から要素を取り除いてそれを返す
 Float::INFINITY 無限
 # deep_copy
 obj_m = Marshal.load(Marshal.dump(obj))
+# 計算
+Math.sqrt(x) 平方数
