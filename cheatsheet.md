@@ -29,6 +29,7 @@ a.pop   : 配列の末尾から要素を取り除いてそれを返す
 .ceil  切り上げ
 .round 四捨五入
 Float::INFINITY 無限
+数値判定：str.match?(/^[0-9]$/)
 # deep_copy
 obj_m = Marshal.load(Marshal.dump(obj))
 # 計算
