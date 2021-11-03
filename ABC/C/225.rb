@@ -24,3 +24,7 @@ end
 puts ans
 
 # 矩形領域の判定
+# 行列
+
+# よりシンプルな解答例
+# https://atcoder.jp/contests/abc225/submissions/26901588
