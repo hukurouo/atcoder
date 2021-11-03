@@ -23,3 +23,11 @@ a = [2, 3, 4, 6, 9, 10]
 puts a.bsearch {|x| x > 7}                # => 9 要素
 puts a.bsearch_index {|x| x > 7}          # => 4 インデックス
 ~~~
+
+## 素数判定
+https://qiita.com/norioc/items/5c270ad6ff5d22d1efd0
+~~~
+require "prime"
+Prime.each(10000)
+3.prime?
+~~~

@@ -24,3 +24,4 @@ pl = fetch_prime_list(110000)
 puts pl.select{|num|num>=X}.first
 
 # 素数判定
+# エラトステネスの篩
