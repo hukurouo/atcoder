@@ -1,3 +1,4 @@
+# 二分探索
 def binary_search(x, arr)
     arr.sort!
     left = 0
