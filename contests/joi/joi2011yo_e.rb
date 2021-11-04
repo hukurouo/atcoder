@@ -40,3 +40,6 @@ check_point.each do |gy, gx|
 end
 
 puts ans
+
+# BFS
+# 迷路
