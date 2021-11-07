@@ -31,3 +31,10 @@ require "prime"
 Prime.each(10000)
 3.prime?
 ~~~
+
+## 1000000007 で割ったあまり
+解説
+https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a
+
+ライブラリ
+https://github.com/universato/ac-library-rb/blob/main/document_ja/modint.md
