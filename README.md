@@ -8,6 +8,6 @@ docker-compose up -d
 
 ## exec
 ~~~
-docker exec -it atcoder-ruby-1 bash
+docker exec -it atcoder_ruby_1 bash
 bash-5.0# ruby main.rb
 ~~~
