@@ -1,10 +1,3 @@
-## 重複無しで3ペアを選ぶ
-~~~
-(0..n-1).each do |i|
-    ((i+1)..n-1).each do |j|
-        ((j+1)..n-1).each do |k|
-~~~
-
 ## よくあるミス
 if文が == じゃなくて = になっている
 `[ny][ny]`とかになっている
@@ -39,3 +32,11 @@ https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a
 
 ライブラリ
 https://github.com/universato/ac-library-rb/blob/main/document_ja/modint.md
+
+## しゃくとり法が使える場面
+長さ n の数列 a1,a2,…,an において
+- 「条件」を満たす区間 (連続する部分列) のうち、最小の長さを求めよ
+- 「条件」を満たす区間 (連続する部分列) のうち、最大の長さを求めよ
+- 「条件」を満たす区間 (連続する部分列) を数え上げよ
+
+https://qiita.com/drken/items/ecd1a472d3a0e7db8dce
