@@ -40,3 +40,5 @@ Float::INFINITY 無限
 obj_m = Marshal.load(Marshal.dump(obj))
 # 計算
 Math.sqrt(x) 平方数
+# hash
+hash = hash.sort_by { |_, v| v }.to_h : valueでsort
