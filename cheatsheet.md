@@ -3,9 +3,9 @@ N = gets.to_i
 # スペース区切りの整数の入力
 a,b = gets.chomp.split.map(&:to_i)
 N,M = gets.chomp.split.map(&:to_i)
-arr = gets.chomp.split.map(&:to_i)
+a = gets.chomp.split.map(&:to_i)
 xy = Array.new(N) { gets.split.map(&:to_i) }
-arr = Array.new(N) { gets.to_i }
+a = Array.new(N) { gets.to_i }
 # 文字列の入力
 s = gets.chomp
 # 出力
