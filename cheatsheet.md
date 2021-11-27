@@ -21,6 +21,7 @@ num.to_s.split(//).map(&:to_i).sum
 s.slice!(i,n) : i番目からn文字削除
 s[len-n,len] : 文字列の末尾n文字
 c.match?(/[a-z]/) : 小文字判定
+s.chop : 末尾削除
 # 配列操作
 Array.new(N) { Array.new(M,0) }
 [*1..5] => [1,2,3,4,5]
