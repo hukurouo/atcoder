@@ -3,9 +3,9 @@ N = gets.to_i
 # スペース区切りの整数の入力
 a,b = gets.chomp.split.map(&:to_i)
 N,M = gets.chomp.split.map(&:to_i)
-a = gets.chomp.split.map(&:to_i)
+arr = gets.chomp.split.map(&:to_i)
 xy = Array.new(N) { gets.split.map(&:to_i) }
-a = Array.new(N) { gets.to_i }
+arr = Array.new(N) { gets.to_i }
 # 文字列の入力
 s = gets.chomp
 # 出力
@@ -25,6 +25,7 @@ s.chop : 末尾削除
 # 配列操作
 Array.new(N) { Array.new(M,0) }
 [*1..5] => [1,2,3,4,5]
+a.unshift : 先頭に
 a.shift : 配列の先頭の要素を取り除いてそれを返す
 a.shift(n) : n個だけ取り除き、それを配列で返す
 a.pop   : 配列の末尾から要素を取り除いてそれを返す
