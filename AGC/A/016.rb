@@ -8,11 +8,11 @@ s.chars.each do |c|
     hash[c]+=1
 end
 
-ans = 0
+ans = Float::INFINITY
 hash.each do |k,v|
     cnt = 0
     ts = Marshal.load(Marshal.dump(s))
-    while ts.split.uniq.size != 1
+    while ts.chars.uniq.size != 1
         cnt += 1
         tts = ""
         (ts.size-1).times do |i|
@@ -24,6 +24,6 @@ hash.each do |k,v|
         end
         ts = tts
     end
-    ans = [cnt,ans].max
+    ans = [cnt,ans].min
 end
 puts ans

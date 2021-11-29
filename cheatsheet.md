@@ -43,3 +43,4 @@ obj_m = Marshal.load(Marshal.dump(obj))
 Math.sqrt(x) 平方数
 # hash
 hash = hash.sort_by { |_, v| v }.to_h : valueでsort
+["a", "b", "c", "b"].tally  #=> {"a"=>1, "b"=>2, "c"=>1}
