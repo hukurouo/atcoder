@@ -38,6 +38,8 @@ arr.inject(:*) 配列内の数値の積
 Float::INFINITY 無限
 数値判定：str.match?(/^[0-9]$/)
 0埋め：num_str = format("%03<n>d",n: i) =>3桁
+最大公約数 __gcd
+最小公倍数 __lcm
 # deep_copy
 obj_m = Marshal.load(Marshal.dump(obj))
 # 計算
