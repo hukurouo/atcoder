@@ -8,6 +8,7 @@ xy = Array.new(N) { gets.split.map(&:to_i) }
 arr = Array.new(N) { gets.to_i }
 # 文字列の入力
 s = gets.chomp
+arr = Array.new(N) { gets.chomp }
 # 出力
 print("#{a+b+c} #{s}\n")
 # while文
@@ -39,11 +40,16 @@ Float::INFINITY 無限
 数値判定：str.match?(/^[0-9]$/)
 0埋め：num_str = format("%03<n>d",n: i) =>3桁
 最大公約数 __gcd
+numbers.inject(:gcd)
 最小公倍数 __lcm
+numbers.inject(:lcm)
 # deep_copy
 obj_m = Marshal.load(Marshal.dump(obj))
 # 計算
 Math.sqrt(x) 平方数
+require 'bigdecimal'
+require 'bigdecimal/util'
+BigDecimal(2).sqrt(100)
 Prime.prime_division(2600).map {|p, e| [p] * e }.flatten　素因数分解
 # hash
 hash = hash.sort_by { |_, v| v }.to_h : valueでsort
