@@ -1,25 +1,22 @@
-# https://atcoder.jp/contests/arc061/tasks/arc061_a
+# https://atcoder.jp/contests/abc061/tasks/abc061_c
 
-# 入力
-s = gets.chomp
-@cnt = 0
+N,K = gets.chomp.split.map(&:to_i)
+arr = Array.new(N) { gets.split.map(&:to_i) }
 
-def dfs(s,sum)
-    # 最深部まで到達したとき
-    if s == nil || s.size == 0
-        @cnt += sum
-    end
-    len = s.size
-    (0..len-1).each do |i|
-        num = s[0..i].to_i
-        dfs(s[i+1..len], sum + num)
+hash = {}
+arr.each do |ar|
+    a = ar[0]
+    b = ar[1]
+    hash[a]||=0
+    hash[a]+=b
+end
+
+hash = hash.sort.to_h
+t = 0
+hash.each do |k,v|
+    t += v
+    if t>=K
+        puts k
+        exit
     end
 end
-    
-dfs(s,0)
-res = @cnt
-# 出力
-print("#{res}\n")
-
-# 部分和問題
-# bit全探索
