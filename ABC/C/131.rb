@@ -19,3 +19,5 @@ lcm = c.lcm(d)
 lcm_cnt = (b/lcm) - start_index(a,lcm)
 
 puts all - c_cnt - d_cnt + lcm_cnt
+
+# 切り上げ

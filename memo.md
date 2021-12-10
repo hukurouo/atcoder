@@ -43,3 +43,15 @@ https://github.com/universato/ac-library-rb/blob/main/document_ja/modint.md
 - 「条件」を満たす区間 (連続する部分列) を数え上げよ
 
 https://qiita.com/drken/items/ecd1a472d3a0e7db8dce
+
+## 切り上げ
+~~~
+def start_index(n,d)
+    if n%d==0
+        return n/d
+    else
+        return n/d + 1
+    end
+end
+# rubyの n/d はデフォで切り捨て
+~~~
