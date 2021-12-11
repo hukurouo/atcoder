@@ -20,7 +20,7 @@ end
 num.to_s.split(//).map(&:to_i).sum
 # 文字列
 s.slice!(i,n) : i番目からn文字削除
-s[len-n,len] : 文字列の末尾n文字 ※ s[0..0]ではなくs.chars[0,0]を使う
+s[len-n,len] : 文字列の末尾n文字 ※ s[0...0]
 c.match?(/[a-z]/) : 小文字判定
 s.chop : 末尾削除
 # 配列操作

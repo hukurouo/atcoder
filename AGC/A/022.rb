@@ -22,12 +22,10 @@ else
                     list2 << l
                 end
             end
-            puts s.chars[0,(s.size-i-2)].join + list2.min 
+            puts s[0...(s.size-i-2)] + list2.min 
             exit
         else
             list << s.reverse[i+1]
         end
     end
 end
-
-# s[0..0]ではなくs.chars[0,0]を使う
