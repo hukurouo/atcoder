@@ -37,7 +37,7 @@ Array.sort{|x|x[1]} 2番目でソート
 .floor 切り捨て # バグ生みやすいので気を付ける
 .ceil  切り上げ # バグ生みやすいので気を付ける
 .round 四捨五入
-Float::INFINITY 無限
+Float::INFINITY
 数値判定：str.match?(/^[0-9]$/)
 0埋め：num_str = format("%03<n>d",n: i) =>3桁
 最大公約数 __gcd

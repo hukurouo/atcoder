@@ -46,7 +46,7 @@ https://qiita.com/drken/items/ecd1a472d3a0e7db8dce
 
 ## 切り上げ
 ~~~
-def start_index(n,d)
+def ceil(n,d)
     if n%d==0
         return n/d
     else
