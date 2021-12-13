@@ -32,7 +32,7 @@ a.shift(n) : n個だけ取り除き、それを配列で返す
 a.pop   : 配列の末尾から要素を取り除いてそれを返す
 [1,2,3,4,5].select { |num| num.even? }　filter
 arr.inject(:*) 配列内の数値の積
-Array.sort{|x|x[1]} 2番目でソート
+Array.sort_by{|x|x[1]} 2番目でソート
 # 数値
 .floor 切り捨て # バグ生みやすいので気を付ける
 .ceil  切り上げ # バグ生みやすいので気を付ける
