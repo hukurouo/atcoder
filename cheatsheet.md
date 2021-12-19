@@ -52,7 +52,7 @@ Math.sqrt(x) 平方数
 require 'bigdecimal'
 require 'bigdecimal/util'
 BigDecimal(2).sqrt(100)
-Prime.prime_division(2600).map {|p, e| [p] * e }.flatten　素因数分解
+Prime.prime_division(2600).map {|p, e| [p] * e }.flatten 素因数分解
 # hash
 hash = hash.sort_by { |_, v| v }.to_h : valueでsort
 ["a", "b", "c", "b"].tally  #=> {"a"=>1, "b"=>2, "c"=>1}
