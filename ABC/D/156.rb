@@ -33,3 +33,5 @@ puts (ans-a-b)%MOD
 
 # フェルマーの小定理
 # https://img.atcoder.jp/abc156/editorial.pdf
+# コンビネーション
+# 繰り返し二乗法
