@@ -19,6 +19,17 @@ s=[1,2,3]; s[0,0] => [] とするべき
 a = [2, 3, 4, 6, 9, 10]
 puts a.bsearch {|x| x > 7}                # => 9 要素
 puts a.bsearch_index {|x| x > 7}          # => 4 インデックス
+
+l=0
+r=10**20
+while r-l > 1
+    mid = (l+r)/2
+    if (mid*(mid+1))/2 <= n+1
+        l=mid
+    else
+        r=mid
+    end
+end
 ~~~
 
 ## 素数判定

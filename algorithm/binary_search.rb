@@ -16,6 +16,18 @@ def binary_search(x, arr)
     false
 end
 
+# simple
+l=0
+r=10**20
+while r-l > 1
+    mid = (l+r)/2
+    if (mid*(mid+1))/2 <= n+1
+        l=mid
+    else
+        r=mid
+    end
+end
+
 def linear_search(x, arr)
     arr.each do |number|
       if number == x
