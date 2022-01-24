@@ -32,6 +32,8 @@ while i<n
     puts Paint['success :)', :green]
   else
     puts Paint['failure :(', :red]
+    puts "output: #{outputs.gsub("\r\n"," ")}"
+    puts "answer: #{result.gsub("\n"," ")}"
   end
   i+=1
 end
