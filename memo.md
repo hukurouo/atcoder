@@ -19,6 +19,7 @@ s=[1,2,3]; s[0,0] => [] とするべき
 a = [2, 3, 4, 6, 9, 10]
 puts a.bsearch {|x| x > 7}                # => 9 要素
 puts a.bsearch_index {|x| x > 7}          # => 4 インデックス
+a.bsearch_index {|x| x > 7} || a.size
 
 l=0
 r=10**20
@@ -86,4 +87,14 @@ until queue.empty?
         queue.push([ny, nx, cost+1])
     end
 end
+~~~
+
+## 約数
+
+aがnの約数であるような対(a,n)を探すとき、nを固定してaを探すよりもaを固定してnを探す方が効率的
+~~~
+div = np.zeros(N+1, np.int64)
+for n in range(1, N+1):
+  for m in range(n, N+1, n):
+    div[m] += 1
 ~~~
