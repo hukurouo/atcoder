@@ -1,11 +1,26 @@
 require 'mechanize'
 require 'paint'
+require 'dotenv'
+Dotenv.load
+
+def login
+  agent = Mechanize.new
+  login_page = agent.get("https://atcoder.jp/login")
+
+  form = login_page.forms[1]
+  button = form.buttons
+  form["username"] = ENV["ID"]
+  form["password"] = ENV["PASS"]
+
+  form.submit()
+  agent
+end
 
 file = File.open("main.rb","r")
 url = file.read.split("\r")[0].split(" ")[1]
 
 samples={input: [], output: []}
-agent = Mechanize.new
+agent = login()
 page = agent.get(url)
 table = page.xpath('//div[@class="part"]/section')
 table.each_with_index do |t,i|
