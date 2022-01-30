@@ -87,6 +87,19 @@ until queue.empty?
         queue.push([ny, nx, cost+1])
     end
 end
+
+memo = Array.new(N+1)
+queue = [[1,0]]
+memo[1] = 0
+until queue.empty?
+    u, cost = queue.shift
+    g[u].each do |to|
+        if !memo[to]
+            queue << [to, cost+1]
+            memo[to] = cost+1
+        end
+    end
+end
 ~~~
 
 ## 約数

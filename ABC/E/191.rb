@@ -96,28 +96,23 @@ abc.each do |a,b,c|
     hash[a] << [b,c]
 end
 
-def dfs(s, order, used, hash)
-    q = [s]
-    until q.empty?
-        u = q.shift
-        used[u] = true
-        order << u
-        hash[u]||=[]
-        hash[u].each do |to, _|
-            next if used[to]
-            q << to
-        end
-    end
-end
-
 used = Array.new(N+1)
 order = []
 # 後続のダイクストラで計算結果を再利用しやすくするように順番を入れ替える
 (1..N).each do |u|
-    dfs(u, order, used, hash) if !used[u]
+    q = [u]
+    until q.empty?
+        u = q.shift
+        next if used[u]
+        used[u] = true
+        order << u
+        hash[u]||=[]
+        hash[u].each do |to, _|
+            q << to
+        end
+    end
 end
 order.reverse!
-order.uniq!
 
 ans = {}
 dp = Array.new(N + 1)
